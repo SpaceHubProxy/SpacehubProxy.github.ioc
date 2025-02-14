@@ -1,15 +1,104 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <!DOCTYPE html>
-      <!DOCTYPE html>
+   
 <html lang="en">
-<html lang="en">
+<head>
+
+</body>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Space Hub Navigation Bar</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
+  <title>Space </title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body background and font */
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://source.unsplash.com/1600x900/?space,stars') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      height: 100vh; /* Ensures body takes full screen height */
+      overflow: hidden; /* Prevent scrolling */
+      padding-top: 80px; /* Add padding to account for fixed navbar height */
+    }
+
+    /* Navigation Bar Styling */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+      position: fixed; /* Fix navbar to the top */
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000; /* Ensure navbar stays above content */
+    }
+
+    .navbar .logo {
+      font-size: 2.5rem;
+      color: #9b59b6; /* Nebula purple */
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(155, 89, 182, 0.8), 0 0 20px rgba(155, 89, 182, 0.6);
+    }
+
+    .nav-links {
+      list-style-type: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links li {
+      font-size: 1.2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #9b59b6; /* Nebula purple */
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-out;
+    }
+
+    .nav-links a:hover {
+      color: #9b59b6; /* Nebula purple */
+    }
+
+    .nav-links a:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    /* Prevent extra scrolling */
+    .content {
+      height: 100%; /* Ensures the content fits within the body */
+      overflow: hidden; /* Disable overflow */
+    }
+  </style>
 </head>
 <body>
   <div class="navbar">
@@ -21,17 +110,13 @@
     </ul>
   </div>
 
-  <!-- You can add more content here if needed -->
-  <div style="height: 2000px;"></div>
+  <!-- Content Section -->
+  <div class="content">
+    <!-- You can add content here, ensuring no scroll appears -->
+  </div>
 </body>
 </html>
 
-
-
-<html lang="en">
-<head>
-
-</body>
 </html>
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
